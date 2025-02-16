@@ -19,7 +19,7 @@ const HowItWorks = () => {
       ease: 'power2.inOut'
     })
 
-    animateWithGsap('.g_fadeIn', {
+    animateWithGsap('#g-fadeIn', {
       opacity: 1,
       y: 0,
       duration: 1,
@@ -54,7 +54,7 @@ const HowItWorks = () => {
                 className="bg-transparent relative z-10"
               />
             </div>
-            <div className="absolute w-[95%] h-[90%] rounded-[56px] overflow-hidden">
+            <div className="absolute w-fit h-[90%] rounded-[56px] overflow-hidden">
                 <video className="pointer-events-none" playsInline preload="none" muted autoPlay ref={videoRef}>
                   <source src={frameVideo} type="video/mp4" />
                 </video>
@@ -65,14 +65,14 @@ const HowItWorks = () => {
 
           <div className="flex md:flex-row flex-col justify-between items-start gap-24">
                 <div className="flex flex-1 justify-center flex-col">
-                  <p className="text-gray text-xl font-normal md:font-semibold opacity-0 translate-y-[100px]">
+                  <p id='g-fadeIn' className="text-gray text-xl font-normal md:font-semibold opacity-0 translate-y-[100px]">
                     A17 Pro is an entirely new class of iPhone chip that delivers our {' '}
                     <span className="text-white">
                       best graphic performance by far
                     </span>.
                   </p>
 
-                  <p className="text-gray text-xl font-normal md:font-semibold opacity-0 translate-y-[100px]">
+                  <p id='g-fadeIn' className="text-gray text-xl font-normal md:font-semibold opacity-0 translate-y-[100px]">
                    Mobile {' '}
                     <span className="text-white">
                       games will look and feel so immersive
@@ -82,7 +82,7 @@ const HowItWorks = () => {
                 </div>
               
 
-              <div className="flex-1 flex justify-center flex-col g_fadeIn">
+              <div id='g-fadeIn' className="flex-1 flex justify-center flex-col opacity-0 translate-y-[100px]">
                 <p className="text-gray text-xl font-normal md:font-semibold">New</p>
                 <p className="text-white text-3xl md:text-5xl font-normal md:font-semibold my-2">Pro-class GPU</p>
                 <p className="text-gray text-xl font-normal md:font-semibold">with 6 cores</p>

@@ -5,18 +5,18 @@ const Footer = () => {
     <footer className="py-5 sm:px-10 px-5">
       <div className="screen-max-width">
         <div>
-          <p className="font-semibold text-gray text-xs">
+          <p className="font-semibold text-gray-500 text-xs">
             More ways to shop: {' '}
-            <span className="underline text-blue">
+            <span className="underline text-blue-400">
             Find an Apple Store {' '}
             </span>
             or {' '}
-            <span className="underline text-blue">
+            <span className="underline text-blue-400">
             other retailer
             </span>{' '}
             near you.
           </p>
-          <p className="font-semibold text-gray text-xs">
+          <p className="font-semibold text-gray-500 text-xs">
             Or call 000800-040-1966
           </p>
         </div>
