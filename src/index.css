@@ -28,12 +28,15 @@ canvas {
   position: relative;
   /* max-width: 1120px; */
 }
-
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 /* 
 @layer utilities {
-  .flex-center {
-    @apply flex items-center justify-center
-  }
+  
 
   .nav-height {
     @apply h-[calc(100vh-60px)]
